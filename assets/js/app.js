@@ -35,7 +35,7 @@ function calcTDEE(){
 
 function printResults(){ //Prints results to HTML while truncating numbers to improve readability
 
-    // Removes Bootstrap class d-none to make the div visible
+    // Removes Bootstrap class ".d-none" to make the div visible
     // Based on explanation given here → https://www.w3schools.com/howto/howto_js_remove_class.asp
     let results = document.getElementById("results-list");
     results.classList.remove("d-none");
