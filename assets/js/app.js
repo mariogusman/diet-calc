@@ -29,6 +29,9 @@ function calcTDEE(){
         kcalLoss = tdee * 0.9;
         kcalGain = tdee * 1.1;
         printResults();
+    } else {
+        alert("Please provide all the details. If you are unsure on how to respond, check our FAQ and if you encounter an issue please contact us.")
+        
     }
     
 }
