@@ -10,7 +10,11 @@
 
     <title>Daily Calory Calculator</title>
 
-    <script type="text/javascript" src="assets\js\app.js"></script>
+    <script defer type="text/javascript" src="assets\js\app.js"></script>
+    <script 
+        src="https://code.jquery.com/jquery-3.6.0.min.js" 
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+        crossorigin="anonymous"></script>
 </head>
   <body class="container">
     <nav class="navbar navbar-expand-lg navbar-light bg-light mb-3">
@@ -105,11 +109,11 @@
                     </div>
                 </div>
 
-                <button type="button" class="btn btn-primary btn-lg" onclick="calcTDEE()">Calculate!</button>
+                <button type="button" id="calcButton" class="btn btn-primary btn-lg" onclick="calcTDEE()">Calculate!</button>
 
             </div>
 
-            <div class="col-md-6"><!-- Results  -->
+            <div class="col-md-6 d-none" id="results-list"><!-- Results  -->
                 <h2 class="mb-4"><small class="text-muted">Results</small></h2>
                 <ul class="list-group">
                   <li class="list-group-item">The daily caloric intake to <strong>maintain weight</strong> is <span id="dailyMaintain"></span> kcals.</li>
