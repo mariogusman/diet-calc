@@ -58,59 +58,91 @@
         <div class="row">
             <div class="col-md-6"> <!-- Col 1 Left -->
                 <h2 class="mb-4"><small class="text-muted">Personal Information</small></h2>
+                
+                <form class="needs-validation">
 
-                <div class="row"> <!-- Gender -->
-                    <div class="input-group my-2">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text">Gender:</span>
-                        </div>
-                        
-                        <select class="form-control" id="gender">
-                            <option value="" disabled selected></option>
-                            <option value="female">Female</option>
-                            <option value="male">Male</option>
-                        </select>
-                    </div>               
-                </div>
+                    <div class="form-row"> <!-- Gender -->
+                        <div class="input-group my-2">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Gender:</span>
+                            </div>
+                            
+                            <select class="form-control" id="gender" required>
+                                <option value="" disabled selected></option>
+                                <option value="female">Female</option>
+                                <option value="male">Male</option>
+                            </select>
+                        </div>               
+                    </div>
 
-                <div class="row"> <!-- Weight -->
-                    <div class="input-group my-2">
-                        <div class="input-group-prepend">
-                        <span class="input-group-text">Weight:</span>
-                        </div>
-                        <input type="number" id="weight" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
-                        <div class="input-group-append">
-                            <span class="input-group-text">kg.</span>
+                    <div class="form-row"> <!-- Weight -->
+                        <div class="input-group my-2">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text">Weight:</span>
+                            </div>
+
+                            <input 
+                                type="number" 
+                                id="weight" 
+                                class="form-control" 
+                                aria-label="Default" 
+                                aria-describedby="inputGroup-sizing-default"
+                                max="635"
+                                required>
+
+                            <div class="input-group-append">
+                                <span class="input-group-text">kg.</span>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="row"> <!-- Height -->
-                    <div class="input-group my-2">
-                        <div class="input-group-prepend">
-                        <span class="input-group-text">Height:</span>
-                        </div>
-                        <input type="number" id="height" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
-                        <div class="input-group-append">
-                            <span class="input-group-text">cm.</span>
+                    <div class="form-row"> <!-- Height -->
+                        <div class="input-group my-2">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text">Height:</span>
+                            </div>
+
+                            <input 
+                                type="number" 
+                                id="height" 
+                                class="form-control" 
+                                aria-label="Default" 
+                                aria-describedby="inputGroup-sizing-default"
+                                max="272" 
+                                required>
+
+                            <div class="input-group-append">
+                                <span class="input-group-text">cm.</span>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="row"> <!-- Age -->
-                    <div class="input-group my-2">
-                        <div class="input-group-prepend">
-                        <span class="input-group-text" id="inputAge">Age:</span>
-                        </div>
-                        <input type="number" id="age" class="form-control" aria-label="Default" aria-describedby="inputAge">
-                        <div class="input-group-append">
-                            <span class="input-group-text">yrs.</span>
+                    <div class="form-row"> <!-- Age -->
+                        <div class="input-group my-2">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="inputAge">Age:</span>
+                            </div>
+
+                            <input 
+                                type="number" 
+                                id="age" 
+                                class="form-control" 
+                                aria-label="Default" 
+                                aria-describedby="inputAge" 
+                                required>
+
+                            <div class="input-group-append">
+                                <span class="input-group-text">yrs.</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <a href="#results">
-                <button type="button" id="calcButton" class="btn btn-primary btn-lg" onclick="calcTDEE()">Calculate!</button>
-                </a>
+
+                    <div class="form-row">
+                      <a href="#results">
+                        <input type="submit" id="calcButton" class="btn btn-primary btn-lg" onclick="calcTDEE()"></button>
+                      </a>
+                    </div>
+                </form>
             </div>
 
             <div class="col-md-6 d-none" id="results-list"><!-- Results  -->
