@@ -10,11 +10,20 @@ let activityLevel;
 
 //  Calculates BMR based on user input
 function calcBMR(){
+    // Fix to Form submitting and refreshing the page - from "JavaJudt" https://stackoverflow.com/a/53597562
+    $(document).on('submit', '#personalInfo', function(event){
+        event.preventDefault();
+    });
+
+    // End of Form Submit fix
+    
     gender = document.getElementById("gender").value;
     weight = parseInt(document.getElementById("weight").value);
     height = parseInt(document.getElementById("height").value);
     age = parseInt(document.getElementById("age").value);
     activityLevel = document.getElementById("actLevel").value;
+    
+    
 
     if (gender == "male") { //if user is male, will execute male formula, update variables and call printResults function
         bmr = (88.362 + (13.397 * weight) + (4.799 * height) - (5.677 * age));
