@@ -1,8 +1,10 @@
 /* Colors */
-body {background-color: #fafafa;}
+body {
+    background-color: #fafafa;
+}
 
-a {color: silver;}
-a:hover {color: goldenrod;}
+a {color: goldenrod;}
+a:hover {color: silver;}
 
 #calcButton {border: none;}
 #calcButton:hover {background-color: goldenrod;}
@@ -36,4 +38,12 @@ a:hover {color: goldenrod;}
 
 .input-group-append {
     width: 50px;
+}
+
+p {
+    text-align: justify;
+}
+
+footer {
+    text-align: center;
 }

@@ -47,7 +47,7 @@
 
 <body>
   <div class="container-fluid g-0">
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark px-3">
       <div class="container">
         <a class="navbar-brand" href="index.html"><i class="fa fa-calculator" aria-hidden="true"></i> Calc Institute</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -65,10 +65,10 @@
 
     <div class="container jumbotron mt-5">
         <h1 class="display-4">Daily Calorie Calculator</h1>
-        <p class="lead">This is a simple calculator that will help you estimate your ideal daily caloric intake based 
+        <p class="lead text-justify">A simple calculator that will help you estimate your ideal Daily Caloric Intake based 
           on your current stats and goals.</p>
         <hr class="my-4">
-        <p>
+        <p class="text-justify">
             We will calculate your <strong><abbr title="Basal or Resting Metabolic Rate">BMR</abbr></strong> will be calculated using the Harris-Benedict
              equation which will be used to estimate your <strong><abbr title="Total Daily Energy Expenditure">TDEE</abbr></strong> 
             using the Katch-McArdle multipliers. <br>
@@ -85,7 +85,7 @@
 
     <main class="container">
         <div class="row mb-5"> <!-- Calculator/Results -->
-            <div class="col-md-6"> <!-- Col 1 Left -->
+            <div class="col-md-6 mb-3"> <!-- Col 1 Left -->
                 <h2 class="mb-4"><small class="text-muted">Personal Information <i class="fa fa-user-circle" aria-hidden="true"></i> </small></h2>
                 
                 <form id="personalInfo" onsubmit="calcBMR()">
@@ -176,11 +176,11 @@
                           
                           <select class="form-control" id="actLevel" required>
                               <option value="" disabled selected></option>
-                              <option value="1.2">Sedentary (little to no exercise + work a desk job)</option>
-                              <option value="1.375">Lightly Active (light exercise 1-3 days/week)</option>
-                              <option value="1.55">Moderately Active (moderate exercise 3-5 days/week)</option>
-                              <option value="1.725">Very Active (heavy exercise 6-7 days/week) </option>
-                              <option value="1.9">Extremely Active (very heavy exercise or work, training 2x/day)</option>
+                              <option value="1.2">1. Sedentary (little to no exercise + work a desk job)</option>
+                              <option value="1.375">2. Lightly Active (light exercise 1-3 days/week)</option>
+                              <option value="1.55">3. Moderately Active (moderate exercise 3-5 days/week)</option>
+                              <option value="1.725">4. Very Active (heavy exercise 6-7 days/week) </option>
+                              <option value="1.9">5. Extremely Active (very heavy exercise or work, training 2x/day)</option>
                           </select>
                       </div>               
                   </div>
@@ -199,17 +199,16 @@
                 <ul class="list-group" id="results">
                   <li class="list-group-item">Your <strong>BMR</strong> is <span id="dailyBMR"></span> kcals.</li>
                   <li class="list-group-item">Based on your Activity Level, your <strong>TDEE</strong> is <span id="dailyTDEE"></span> kcals.</li>
-                  <li class="list-group-item">To <strong>burn fat</strong> we recomend ingesting <span id="dailyLose"></span> kcals.</li>
-                  <li class="list-group-item">To <strong>gain muscle</strong> we recomend ingesting <span id="dailyGain"></span> kcals.</li>
+                  <li class="list-group-item">To <strong>burn fat</strong> we recommend ingesting <span id="dailyLose"></span> kcals.</li>
+                  <li class="list-group-item">To <strong>gain muscle</strong> we recommend ingesting <span id="dailyGain"></span> kcals.</li>
                   <li class="list-group-item list-group-item-warning"><i class="fa fa-exclamation-circle" aria-hidden="true"></i> This is not a substitute for professional medical advice, 
                     diagnosis or treatment.</li>
                 </ul>
             </div>
-
         </div>
 
         <div class="row my-3"> <!-- FAQ -->
-          <h2 class="display-6" id="faq">Frequently Asked Questions <i class="fa fa-question-circle fa-1" aria-hidden="true"></i></h2>
+          <h2 class="display-6" id="faq">Frequently Asked Questions <i class="fa fa-question-circle fa-1 small text-muted" aria-hidden="true"></i></h2>
         </div>
         <div class="row">
           <div class="accordion" id="accordionExample">
@@ -236,11 +235,15 @@
                   BMR does not include physical activity, the process of digestion (Thermic Effect of Food), or things like walking from one room to another(Non-Exercise Activity Thermogenesis). <wbr> 
                   Basically, BMR is the number of calories your body would expend in a 24 hour period if all you did was lay in 
                   bed all day long.<wbr> This is the absolute bare minimum of calories it takes to ensure your survival.
-
+                    <p class="small muted"><br>
+                      <strong>Source</strong>: Rob Kaufman on SteelFit®. 
+                      <br>
+                      <a href="https://steelfitusa.com/blogs/health-and-wellness/calculate-tdee" target="_blank" rel="noopener noreferrer">Click here</a>
+                       to read the full article.
+                    </p>
                  </div>
               </div>
             </div>
-
 
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingTwo">
@@ -296,10 +299,15 @@
 
                   <p>Speaking of goals, now let’s look at how you can use your TDEE to enhance your body composition whether it be for muscle gain or fat loss.
                   </p>
+                  <p class="small muted">
+                    <strong>Source</strong>: Rob Kaufman on SteelFit®. 
+                    <br>
+                    <a href="https://steelfitusa.com/blogs/health-and-wellness/calculate-tdee" target="_blank" rel="noopener noreferrer">Click here</a>
+                     to read the full article.
+                  </p>
                 </div>
               </div>
             </div>
-
 
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingThree">
@@ -334,6 +342,12 @@
                   <p>So, for example if your TDEE was 2990 you would need to consume between 3190-3290 
                     calories per day to gain muscle.
                   </p>
+                  <p class="small muted"><br>
+                    <strong>Source</strong>: Rob Kaufman on SteelFit®. 
+                    <br>
+                    <a href="https://steelfitusa.com/blogs/health-and-wellness/calculate-tdee" target="_blank" rel="noopener noreferrer">Click here</a>
+                     to read the full article.
+                  </p>
                 </div>
               </div>
             </div>
@@ -357,7 +371,7 @@
                     <hr>
                     <p class="mb-0">If you need more information about your nutrition or medical condition please consult with your Doctor.</p>
                   </div>
-
+                  
                 </div>
               </div>
             </div>
