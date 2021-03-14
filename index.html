@@ -4,62 +4,69 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Daily Calorie Calculator</title>
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-
-    <title>Daily Calory Calculator</title>
-
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" 
+        crossorigin="anonymous">
+        
+    <!-- My JS file -->
     <script defer type="text/javascript" src="assets\js\app.js"></script>
-    <script 
-        src="https://code.jquery.com/jquery-3.6.0.min.js" 
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
-        crossorigin="anonymous"></script>
-</head>
-  <body class="container">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-3">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
 
-    <div class="jumbotron mt-5">
-        <h1 class="display-4">Daily Calory Counter</h1>
-        <p class="lead">This is a simple calculator that can help you estimate your ideal daily caloric intake based on your current stats and goals.</p>
-        <hr class="my-4">
-        <p>This is known as a TDEE calculator which stands for Total Daily Energy Expenditure and is very important when working on weight loss or muscle 
-            gain programs, aligned with exercise a healthy lifestyle and with your Doctor's support.</p>
-        
-        <div class="alert alert-warning" role="alert">
-        Please note this is for educational purposes only and you should always 
-        consult with a doctor before making any changes to your diet or exercise routine.
+    <!-- Animate.css -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Calc Institute</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          <a class="nav-link" href="nutritional-information.html">Nutritional Information</a>
+          <a class="nav-link" href="faq.html">FAQ</a>
         </div>
-        
+      </div>
     </div>
+  </nav>
+
+    <div class="container jumbotron mt-5">
+        <h1 class="display-4">Daily Calorie Calculator</h1>
+        <p class="lead">This is a simple calculator that will help you estimate your ideal daily caloric intake based 
+          on your current stats and goals.</p>
+        <hr class="my-4">
+        <p>
+            We will calculate your <abbr title="Basal or Resting Metabolic Rate">BMR</abbr> will be calculated using the Harris-Benedict
+             equation which will be used to estimate your <abbr title="Total Daily Energy Expenditure">TDEE</abbr> 
+            using the Katch-McArdle multipliers.
+        </p>
+        <p>
+          Note that the results will change once your stats change. We recommended that you re-calculate this 
+          at least once a month or when noticeable changes occur.
+        </p>
+
+        <p>
+            Read more in our FAQ page.
+        </p> 
+      </div>
 
     <main class="container">
-        <div class="row">
+        <div class="row"> <!-- Calculator/Results -->
             <div class="col-md-6"> <!-- Col 1 Left -->
                 <h2 class="mb-4"><small class="text-muted">Personal Information</small></h2>
                 
-                <form class="needs-validation">
+                <form onsubmit="calcBMR()">
+                  <!-- onsubmit idea from : https://www.w3schools.com/jsref/event_onsubmit.asp -->
 
                     <div class="form-row"> <!-- Gender -->
                         <div class="input-group my-2">
@@ -87,7 +94,7 @@
                                 class="form-control" 
                                 aria-label="Default" 
                                 aria-describedby="inputGroup-sizing-default"
-                                max="635"
+                                max="999"
                                 required>
 
                             <div class="input-group-append">
@@ -108,7 +115,7 @@
                                 class="form-control" 
                                 aria-label="Default" 
                                 aria-describedby="inputGroup-sizing-default"
-                                max="272" 
+                                max="299"
                                 required>
 
                             <div class="input-group-append">
@@ -128,7 +135,8 @@
                                 id="age" 
                                 class="form-control" 
                                 aria-label="Default" 
-                                aria-describedby="inputAge" 
+                                aria-describedby="inputAge"
+                                max="99"
                                 required>
 
                             <div class="input-group-append">
@@ -137,29 +145,48 @@
                         </div>
                     </div>
 
-                    <div class="form-row">
-                      <a href="#results">
-                        <input type="submit" id="calcButton" class="btn btn-primary btn-lg" onclick="calcTDEE()"></button>
-                      </a>
+                    <div class="form-row"> <!-- Activity Level -->
+                      <div class="input-group my-2">
+                          <div class="input-group-prepend">
+                              <span class="input-group-text">Activitiy Level:</span>
+                          </div>
+                          
+                          <select class="form-control" id="actLevel" required>
+                              <option value="" disabled selected></option>
+                              <option value="1.2">Sedentary (little to no exercise + work a desk job)</option>
+                              <option value="1.375">Lightly Active (light exercise 1-3 days/week)</option>
+                              <option value="1.55">Moderately Active (moderate exercise 3-5 days/week)</option>
+                              <option value="1.725">Very Active (heavy exercise 6-7 days/week) </option>
+                              <option value="1.9">Extremely Active (very heavy exercise or work, training 2x/day)</option>
+                          </select>
+                      </div>               
+                  </div>
+
+                    <div class="form-row"> <!-- Buttons -->
+                      <a href="#results"><input value="Calculate" type="submit" id="calcButton" class="btn btn-primary" onsubmit="'calcBMR()'; return false"></button></a>                      
+                      <input type="reset" class="btn btn-secondary" value="Clear" onclick="clearResults()">
+                      
                     </div>
+
                 </form>
             </div>
 
-            <div class="col-md-6 d-none" id="results-list"><!-- Results  -->
+            <div class="col-md-6 d-none animate__animated animate__fadeIn" id="results-list"><!-- Results  -->
                 <h2 class="mb-4"><small class="text-muted">Results</small></h2>
                 <ul class="list-group" id="results">
-                  <li class="list-group-item">The daily caloric intake to <strong>maintain weight</strong> is <span id="dailyMaintain"></span> kcals.</li>
-                  <li class="list-group-item">To <strong>lose weight</strong> we recomend eating <span id="dailyLose"></span> kcals.</li>
-                  <li class="list-group-item">To <strong>gain lean muscle</strong> mass we recomend eating <span id="dailyGain"></span> kcals.</li>
+                  <li class="list-group-item">Your <strong>BMR</strong> is <span id="dailyBMR"></span> kcals.</li>
+                  <li class="list-group-item">Based on your Activity Level, your <strong>TDEE</strong> is <span id="dailyTDEE"></span> kcals.</li>
+                  <li class="list-group-item">To <strong>burn fat</strong> we recomend ingesting <span id="dailyLose"></span> kcals.</li>
+                  <li class="list-group-item">To <strong>gain lean muscle</strong> mass we recomend ingesting <span id="dailyGain"></span> kcals.</li>
+                 
                   <li class="list-group-item list-group-item-action"><a href="#">Click here</a> to get nutritional information about your favorite foods.</li>
-                  <li class="list-group-item list-group-item-warning"><strong>Remember</strong>: This does not substitute your doctor's advice.</li>
+                  <li class="list-group-item list-group-item-warning">This is not a substitute for professional medical advice, 
+                    diagnosis or treatment.</li>
                 </ul>
             </div>
 
         </div>
     </main>
-
-
 
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
