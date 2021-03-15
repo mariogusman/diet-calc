@@ -34,7 +34,6 @@ function calcBMR(){
         dailyTDEE = bmr * activityLevel;
         kcalLoss = dailyTDEE * 0.8;
         kcalGain = dailyTDEE * 1.1;
-        console.log("BMR: " + bmr);
         printResults();
         
     } else if (gender == "female") { //if user is female, will execute female formula, update variables and call printResults function
@@ -44,7 +43,6 @@ function calcBMR(){
         dailyTDEE = bmr * activityLevel;
         kcalLoss = dailyTDEE * 0.8;
         kcalGain = dailyTDEE * 1.1;
-        console.log("BMR: " + bmr);
         printResults();
     } else {
         alert("Please provide all the details. If you are unsure on how to respond, check our FAQ and if you encounter an issue please contact us.");
