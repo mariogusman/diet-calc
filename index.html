@@ -97,7 +97,7 @@
                             </div>
                             
                             <select class="form-control" id="gender" required>
-                                <option value="" disabled selected></option>
+                                <option value="" disabled selected>&nbsp;</option>
                                 <option value="female">Female</option>
                                 <option value="male">Male</option>
                             </select>
@@ -114,8 +114,7 @@
                                 type="number" 
                                 id="weight" 
                                 class="form-control" 
-                                aria-label="Default" 
-                                aria-describedby="inputGroup-sizing-default"
+                                aria-label="Default"
                                 max="999"
                                 placeholder="e.g. 60 or 132"
                                 required>
@@ -136,8 +135,7 @@
                                 type="number" 
                                 id="height" 
                                 class="form-control" 
-                                aria-label="Default" 
-                                aria-describedby="inputGroup-sizing-default"
+                                aria-label="Default"
                                 max="299"
                                 placeholder="e.g. 155 or 210"
                                 required>
@@ -177,7 +175,7 @@
                           </div>
                           
                           <select class="form-control" id="actLevel" required>
-                              <option value="" disabled selected></option>
+                              <option value="" disabled selected>&nbsp;</option>
                               <option value="1.2">1. Sedentary (little to no exercise + work a desk job)</option>
                               <option value="1.375">2. Lightly Active (light exercise 1-3 days/week)</option>
                               <option value="1.55">3. Moderately Active (moderate exercise 3-5 days/week)</option>
@@ -188,7 +186,7 @@
                   </div>
 
                     <div class="form-row"> <!-- Buttons -->
-                      <a href="#dailyBMR"><input value="Calculate" type="submit" id="calcButton" class="btn btn-secondary" onsubmit="calcBMR()"></a>                      
+                      <a href="#dailyBMR"><button value="Calculate" type="submit" id="calcButton" class="btn btn-secondary" onsubmit="calcBMR()">Calculate</button></a>                      
                       <input type="reset" class="btn btn-secondary" value="Clear" onclick="clearResults()">
                       
                     </div>
