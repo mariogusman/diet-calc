@@ -100,9 +100,9 @@ In this section, you should mention all of the languages, frameworks, libraries,
   - **Age**: 30 yrs.
   - **Activity Level**: 1. Sedentary
   - After clicking on the "*Calculate*" button, I'm presented with the results:
-    - BMR of 2121 kcals;
-    - TDEE of 2545 kcals;
-    - To burn fat 2036 kcals;
+    - BMR of 2122 kcals;
+    - TDEE of 2546 kcals;
+    - To burn fat 2037 kcals;
     - To gain muscle 2800 kcals.  
 - I'm not very sure how It all works, but I see that there is an FAQ sections below the Results:
   - I click the 1st Question and am presented with an explanation of what BMR and TDEE mean.
@@ -118,7 +118,7 @@ In this section, you should mention all of the languages, frameworks, libraries,
   - **Age**: 24 yrs.
   - **Activity Level**: 4. Very Active
   - After clicking on the "*Calculate*" button, I'm presented with this week's results:
-      - BMR of 1375 kcals;
+      - BMR of 1376 kcals;
       - TDEE of 2373 kcals;
       - To burn fat 1898 kcals;
       - To gain muscle 2610 kcals. 
