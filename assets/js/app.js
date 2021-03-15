@@ -85,4 +85,6 @@ function clearResults() {
 		.removeClass("animated__fadeIn");
 	$("#results-list")
 		.addClass("animate__fadeOut");
+	$("#results-list")
+		.addClass("d-none");
 };
