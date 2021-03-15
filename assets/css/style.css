@@ -1,49 +1,63 @@
 /* Colors */
+
 body {
-    background-color: #fafafa;
+	background-color: #fafafa;
 }
 
-a {color: goldenrod;}
-a:hover {color: silver;}
+a {
+	color: goldenrod;
+}
 
-#calcButton {border: none;}
-#calcButton:hover {background-color: goldenrod;}
+a:hover {
+	color: silver;
+}
+
+#calcButton {
+	border: none;
+}
+
+#calcButton:hover {
+	background-color: goldenrod;
+}
 
 .accordion-button:not(.collapsed) {
-    color: black;
-    background-color: #f9f0d8;
+	color: black;
+	background-color: #f9f0d8;
 }
+
 .accordion-button:focus {
-    z-index: 3;
-    border-color: lightgrey;
-    outline: 0;
-    box-shadow: 0 0 0 0;
+	z-index: 3;
+	border-color: lightgrey;
+	outline: 0;
+	box-shadow: 0 0 0 0;
 }
 
 .accordion-button:not(.collapsed)::after {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23be901c'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23be901c'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
 
 /* Other */
+
 .input-group-prepend {
-    width: 80px;
+	width: 80px;
 }
 
 #lbl-activity-level {
-    width: 120px;
+	width: 120px;
 }
-.input-group-text{
-    text-align: right;
+
+.input-group-text {
+	text-align: right;
 }
 
 .input-group-append {
-    width: 50px;
+	width: 50px;
 }
 
 p {
-    text-align: justify;
+	text-align: justify;
 }
 
 footer {
-    text-align: center;
+	text-align: center;
 }
