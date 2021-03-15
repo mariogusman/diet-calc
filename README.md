@@ -1,5 +1,5 @@
 # **Daily Calorie Calculator**
-![alt text](readmeAssets\amIresponsive.jpg "Daily Calorie Calculator is Responsive!")
+![AmIResponsive Screenshot - This project is responsive!](https://raw.githubusercontent.com/mariogusman/diet-calc/main/readmeAssets/amIresponsive.jpg)
 
 This project is a simple and straight-to-the-point TDEE Calculator that will assist users in finding out how many calories they should be ingesting daily to maintain, gain or lose weight.
 
@@ -15,7 +15,7 @@ The website also contains an FAQ section with valuable information about how the
 
 The layout was always meant to be simple and free of distractions. The image below illustrates the initial concept that was easily achieved using Bootstrap's components:
 
-![alt text](readmeAssets\wireframe.jpg "Initial Wireframe")
+![Initial Wireframe](https://raw.githubusercontent.com/mariogusman/diet-calc/main/readmeAssets/wireframe.jpg)
 
 This wireframe was created using [Wireframe.cc](https://wireframe.cc/).
 
@@ -138,12 +138,12 @@ In this section, you should mention all of the languages, frameworks, libraries,
 - The initial test showed that some aspects could be improved.
 - These included multiple minor changes such as adding "noreferrer noopener" to external links and improving contrast in the footer section.
  
-    ![Lighthouse Test Before](readmeAssets\Lighthouse-mobile-before.jpg)
+    ![Lighthouse Test Before](https://github.com/mariogusman/diet-calc/blob/main/readmeAssets/Lighthouse-mobile-before.jpg?raw=true)
     
 
 - After reviewing the suggestions, the new result is near perfect.
     
-    ![Lighthouse Test After](readmeAssets\lighthouse-mobile-after.jpg)
+    ![Lighthouse Test After](https://github.com/mariogusman/diet-calc/blob/main/readmeAssets/lighthouse-mobile-after.jpg?raw=true)
 
 
 ## **Deployment**
