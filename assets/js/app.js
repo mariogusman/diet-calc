@@ -3,10 +3,12 @@ let gender;
 let weight;
 let height;
 let age;
-let tdee;
 let kcalLoss;
 let kcalGain;
 let activityLevel;
+let bmr;
+let dailyBMR;
+let dailyTDEE;
 
 //  Calculates BMR based on user input
 function calcBMR(){
