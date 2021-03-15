@@ -124,6 +124,16 @@ In this section, you should mention all of the languages, frameworks, libraries,
       - To gain muscle 2610 kcals. 
 - I take note of it and am now ready to update my meal plan for the week. See you next week!
 
+### Automated Testing
+
+#### Validators
+- The **index.html** page was validated using [W3.org](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmariogusman.github.io%2Fdiet-calc%2F)'s validator.
+    - It originally showed a few errors that are now fixed - No errors or warnings to show.
+
+- The **style.css** file was validated using [W3.org](https://jigsaw.w3.org/css-validator/)'s validator and passed without errors.
+    - When validating the whole page instead of the style.css file, [some errors](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmariogusman.github.io%2Fdiet-calc%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) are shown but these are due to external CSS files from Bootstrap, Hover.css, Animate.css and Fontawesome.
+
+- The **app.js** code, the main JavaScript code for this website, was validated using [JSHint](https://jshint.com/) and passed without errors.
 
 
 
