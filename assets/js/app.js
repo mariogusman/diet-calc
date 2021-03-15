@@ -65,6 +65,8 @@ function printResults(){ //Prints results to HTML while truncating numbers to im
     document.getElementById('dailyGain').innerHTML = Math.trunc(kcalGain);
 };
 
+// Adds Bootstrap class ".d-none" to the "results-list" div
+// this class makes the whole div invisible to users
 function clearResults(){
     let results = document.getElementById("results-list");
     results.classList.add("d-none");
