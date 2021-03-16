@@ -1,7 +1,7 @@
 # **Daily Calorie Calculator**
 ![AmIResponsive Screenshot - This project is responsive!](https://raw.githubusercontent.com/mariogusman/diet-calc/main/readmeAssets/amIresponsive.jpg)
 
-This project is a simple and straight-to-the-point TDEE Calculator that will assist users in finding out how many calories they should be ingesting daily to maintain, gain or lose weight.
+This project is an effective and straight-to-the-point TDEE Calculator that will assist users in finding out how many calories they should be ingesting daily to maintain, gain or lose weight.
 
 JavaScript with jQuery, Bootstrap, and a few lines of CSS were used to build this project.
 
